@@ -31,4 +31,6 @@ mv *google* TWIG/
 
 mv *specials* TWIT_Specials/
 
-mv *windows* Windows_Weekly/ 
+mv *windows* Windows_Weekly/
+
+mv *security* Security_Now/ 
