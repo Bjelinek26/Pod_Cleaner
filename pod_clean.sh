@@ -9,7 +9,8 @@ cd ~/Podcasts/TWIT/
 # to do: add all directories to an array
 # for each loop mv to correct dir based on regex
 # to do: add option to added new directory 
-# and add this to the array 
+# and add this to the array
+
 
 mv *android* All_About_Android/
 
