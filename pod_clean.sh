@@ -10,6 +10,7 @@ cd ~/Podcasts/TWIT/
 # for each loop mv to correct dir based on regex
 # to do: add option to added new directory 
 # and add this new directory to the array
+# create functions
 
 n=1
 z=1    
