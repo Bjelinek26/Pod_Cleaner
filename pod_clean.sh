@@ -12,19 +12,8 @@ cd ~/Podcasts/TWIT/
 # and add this new directory to the array
 # create functions
 
-n=1
-z=1    
-while read FILES
-do  
-  if [[ -d $FILES ]]
-  then 
-    echo "i am dir number ${n}"
-    ((n++))
-  else [[ -f $FILES ]]
-    echo "i am a file numer ${z}" 
-    STUFF=$FILES
-    for STUFF in $STUFF
-    do 
+function hardcoded() {
+
       mv *android* All_About_Android/ 2>/dev/null
 
       mv *floss* FLOSS/ 2>/dev/null
@@ -47,7 +36,24 @@ do
 
       mv *windows* Windows_Weekly/ 2>/dev/null
 
-      mv *security* Security_Now/FILES 2>/dev/null 
+      mv *security* Security_Now/FILES 2>/dev/null
+
+}
+
+n=1
+z=1    
+while read FILES
+do  
+  if [[ -d $FILES ]]
+  then 
+    echo "i am dir number ${n}"
+    ((n++))
+  else [[ -f $FILES ]]
+    echo "i am a file numer ${z}" 
+    STUFF=$FILES
+    for STUFF in $STUFF
+    do 
+      hardcoded
     done 
    ((z++))     
   fi
