@@ -7,4 +7,6 @@
 
 cd ~/Podcasts/TWIT/
 
-./pod_clean.sh 2>/dev/null
+shopt -s nocaseglob
+
+. pod_clean.sh 2>/dev/null
